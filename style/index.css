@@ -81,11 +81,12 @@ header {
 #image2,
 #image3,
 #image4 {
-  width: 150px;
-  height: 400px;
-  margin: 20px;
+  width: 170px;
+  height: 450px;
+  margin: 10px;
   background-color: #ffaf87;
 
+  /* 트랜지션이 0.7초(s)동안 실행되게 해준다 */
   transition-duration: 0.7s;
 }
 
@@ -93,7 +94,29 @@ header {
 #image2:hover,
 #image3:hover,
 #image4:hover {
+  /* width속성이 400px가 될 때까지 점차 변동한다.
+  마우스가 영역에서 빠져나올 경우 원상태로 되돌아가는 애니메이션이 재생된다 */
   width: 400px;
+}
+
+#image1 {
+  background-image: url(../image/dinosaur.jpg);
+  background-position: center center;
+}
+
+#image2 {
+  background-image: url(../image/dreamcapture.jpg);
+  background-position: center center;
+}
+
+#image3 {
+  background-image: url(../image/earth.jpg);
+  background-position: center center;
+}
+
+#image4 {
+  background-image: url(../image/tour.jpg);
+  background-position: center center;
 }
 
 footer {
